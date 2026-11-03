@@ -1,4 +1,4 @@
-# Elevator
++# Elevator
 
 This project extends the Linux kernel with a scheduling algorithm for a pet elevator. Part 1 traces system calls with `strace`. Part 2 adds a kernel module that reports the time through `/proc/timer`. Part 3 adds three system calls and a kernel module that runs the elevator, with its live state shown in `/proc/elevator`.
 
@@ -136,9 +136,9 @@ Each member records their contributions here.
 
 | Date       | Work Completed / Notes |
 |------------|------------------------|
-| 2026-11-01 | Started the kernel my_timer  |
+| 2026-11-01 | Developed a Linux kernel module named my_timer that retrieves the current system time using ktime_get_real_ts64()  |
 | 2026-11-01 | fixed some issues from the kernel   |
-| 2026-11-02 | Finished building the kernel and unloaded the /proc/timer entry  |
+| 2026-11-02 | Added functionality to display both the current time and the elapsed time since the previous read operation of /proc/timer. |
 
 ### Pragun Kapur
 
