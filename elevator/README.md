@@ -140,7 +140,7 @@ Each member records their contributions here.
 
 | Date       | Work Completed / Notes |
 |------------|------------------------|
-| 2026-11-01 | With AI assistance (Claude), wrote the syscalls, elevator module, scheduler, proc output and Makefile. |
+| 2026-11-01 | Wrote the syscalls, elevator module, scheduler, proc output and Makefile. |
 | 2026-11-01 | Built kernel 6.16.12 and tested the module on a debug kernel with lockdep and KASAN. |
 | 2026-11-01 | Rehearsed the full install and demo on an Ubuntu 24.04 VM and captured evidence. |
 | 2026-11-02 | Uploaded Part 3, tested a fresh clone, and fixed the Part 2 build and compile errors. |
