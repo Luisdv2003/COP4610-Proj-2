@@ -9,9 +9,8 @@
 #define PERMS 0644
 #define PARENT NULL
 #define BUF_LEN 256
-//ok so pretty much lets do this project!! my part at least, part 1 is done and hopefully everything runs smoothly
 
-MODULE_LICENCE("GPL");
+MODULE_LICENSE("GPL");
 
 static struct proc_dir_entry *proc_entry;
 
@@ -21,7 +20,7 @@ static int read = 1;
 
 static ssize_t procfile_read(
 		struct file *file,
-		char_user *ubuf,
+		char __user *ubuf,
 		size_t count,
 		loff_t *ppos)
 {
@@ -34,7 +33,6 @@ static ssize_t procfile_read(
 	if (*ppos >0){
 		return 0;}
 
-	//I like doing the brackets even tho i dont need them fun fact jejejejeje although sometimes i dont do it so... a bit inconsistent i guess...
 	
 	ktime_get_real_ts64(&present_time);
 
@@ -42,7 +40,7 @@ static ssize_t procfile_read(
 		len=snprintf(
 				buffer,
 				BUF_LEN,
-				"current time: %11d.%09ld\n",
+				"current time: %lld.%09ld\n",
 				(long long)present_time.tv_sec,
 				present_time.tv_nsec
 			    );
@@ -75,6 +73,9 @@ static ssize_t procfile_read(
 	}
 
 	past_time = present_time;
+
+	if(len > count)
+		len = count;
 
 	if(copy_to_user(ubuf, buffer,len)){
 		return -EFAULT;}
@@ -109,4 +110,3 @@ static void __exit my_timer_exit(void)
 
 module_init(my_timer_init);
 module_exit(my_timer_exit);
-//ok this should work and i really hope it does, havent figured it out yet but will do later and if no more comments.. well means it worked lol
