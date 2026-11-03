@@ -3,42 +3,42 @@
 [Description]
 
 ## Group Members
-- **John Doe**: jd19@fsu.edu
-- **Jane Smith**: js19@fsu.edu
-- **Alex Brown**: ab19@fsu.edu
+- **Luis Dominguez**
+- **Pragun Kapur**
+- **Juan Medina Molina**
 ## Division of Labor
 
 ### Part 1: System Call Tracing
 - **Responsibilities**: [Description]
-- **Assigned to**: John Doe
+- **Assigned to**: Juan Medina Molina
 
 ### Part 2: Timer Kernel Module
 - **Responsibilities**: [Description]
-- **Assigned to**: Jane Smith
+- **Assigned to**: Luis Dominguez
 
 ### Part 3a: Adding System Calls
 - **Responsibilities**: [Description]
-- **Assigned to**: Alex Brown
+- **Assigned to**: Pragun Kapur
 
 ### Part 3b: Kernel Compilation
 - **Responsibilities**: [Description]
-- **Assigned to**: Alex Brown, Jane Smith
+- **Assigned to**: Pragun Kapur
 
 ### Part 3c: Threads
 - **Responsibilities**: [Description]
-- **Assigned to**: Alex Brown, Jane Smith
+- **Assigned to**: Pragun Kapur
 
 ### Part 3d: Linked List
 - **Responsibilities**: [Description]
-- **Assigned to**: Jane Smith
+- **Assigned to**: Pragun Kapur
 
 ### Part 3e: Mutexes
 - **Responsibilities**: [Description]
-- **Assigned to**: John Doe
+- **Assigned to**: Pragun Kapur
 
 ### Part 3f: Scheduling Algorithm
 - **Responsibilities**: [Description]
-- **Assigned to**: Alex Brown, John Doe
+- **Assigned to**: Pragun Kapur
 
 ## File Listing
 ```
@@ -114,7 +114,7 @@ This will run the program ...
 ## Development Log
 Each member records their contributions here.
 
-### [Member 1]
+### Luis Dominguez
 
 | Date       | Work Completed / Notes |
 |------------|------------------------|
@@ -122,7 +122,7 @@ Each member records their contributions here.
 | YYYY-MM-DD | [Description of task]  |
 | YYYY-MM-DD | [Description of task]  |
 
-### [Member 2]
+### Pragun Kapur
 
 | Date       | Work Completed / Notes |
 |------------|------------------------|
@@ -131,7 +131,7 @@ Each member records their contributions here.
 | YYYY-MM-DD | [Description of task]  |
 
 
-### [Member 3]
+### Juan Medina Molina
 
 | Date       | Work Completed / Notes |
 |------------|------------------------|
