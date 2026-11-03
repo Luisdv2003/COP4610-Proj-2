@@ -136,9 +136,9 @@ Each member records their contributions here.
 
 | Date       | Work Completed / Notes |
 |------------|------------------------|
-| YYYY-MM-DD | [Description of task]  |
-| YYYY-MM-DD | [Description of task]  |
-| YYYY-MM-DD | [Description of task]  |
+| 2026-11-01 | Started the kernel my_timer  |
+| 2026-11-01 | fixed some issues from the kernel   |
+| 2026-11-02 | Finished building the kernel and unloaded the /proc/timer entry  |
 
 ### Pragun Kapur
 
