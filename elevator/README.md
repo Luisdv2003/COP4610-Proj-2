@@ -152,11 +152,11 @@ Each member records their contributions here.
 
 ### Juan Medina Molina
 
-| Date       | Work Completed / Notes |
-|------------|------------------------|
-| YYYY-MM-DD | [Description of task]  |
-| YYYY-MM-DD | [Description of task]  |
-| YYYY-MM-DD | [Description of task]  |
+| Date | Work Completed / Notes |
+|---|---|
+| 2026-10-27 | Wrote the baseline C program and modified program with five additional system calls for Part 1. |
+| 2026-10-27 | Compiled both programs in Ubuntu/WSL and verified with strace that the modified program made exactly five additional system calls. |
+| 2026-10-29 | Added the Makefile, trace verification script, saved traces, and README instructions; submitted Part 1 through a pull request. |
 
 
 ## Meetings
