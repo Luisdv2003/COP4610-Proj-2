@@ -156,15 +156,7 @@ Each member records their contributions here.
 
 
 ## Meetings
-Document in-person meetings, their purpose, and what was discussed.
-
-| Date       | Attendees            | Topics Discussed | Outcomes / Decisions |
-|------------|----------------------|------------------|-----------------------|
-| YYYY-MM-DD | [Names]              | [Agenda items]   | [Actions/Next steps]  |
-| YYYY-MM-DD | [Names]              | [Agenda items]   | [Actions/Next steps]  |
-| YYYY-MM-DD | [Names]              | [Agenda items]   | [Actions/Next steps]  |
-
-
+The group coordinated through online meetings and discussions.
 
 ## Bugs
 - **Part 3:** A syscall in flight at the exact moment of `rmmod` could call into unloaded code, because the kernel hooks are not reference counted. Stop the elevator and let `producer` finish before unloading.
