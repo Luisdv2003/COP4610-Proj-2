@@ -1,6 +1,6 @@
 # Elevator
 
-[Description]
+This project extends the Linux kernel with a scheduling algorithm for a pet elevator. Part 1 traces system calls with `strace`. Part 2 adds a kernel module that reports the time through `/proc/timer`. Part 3 adds three system calls and a kernel module that runs the elevator, with its live state shown in `/proc/elevator`.
 
 ## Group Members
 - **Luis Dominguez**
@@ -9,11 +9,11 @@
 ## Division of Labor
 
 ### Part 1: System Call Tracing
-- **Responsibilities**: [Description]
+- **Responsibilities**: Compare the `strace` output of an empty C program with a program that makes five extra system calls (`getpid`, `getppid`, `getuid`, `geteuid`, `getgid`), and verify the difference.
 - **Assigned to**: Juan Medina Molina
 
 ### Part 2: Timer Kernel Module
-- **Responsibilities**: [Description]
+- **Responsibilities**: Write the `my_timer` kernel module, which creates `/proc/timer` and uses `ktime_get_real_ts64()` to report the current time and the time elapsed since the last read.
 - **Assigned to**: Luis Dominguez
 
 ### Part 3a: Adding System Calls
@@ -71,30 +71,34 @@ elevator/
 ## Part 1
 
 ### Compilation
-For a C/C++ example:
 ```bash
+cd part1
 make
 ```
-This will build the executable in ...
+This will build the `empty` and `part1` executables in `part1/`.
 ### Execution
 ```bash
-make run
+make trace
 ```
-This will run the program ...
+This will run both programs under `strace`, save `empty.trace` and `part1.trace`, and verify that `part1` makes exactly five more system calls. It requires `strace`. To check the saved traces without regenerating them, run `make verify`.
 
 ## Part 2
 
 ### Compilation
-For a C/C++ example:
 ```bash
+cd part2
 make
 ```
-This will build the executable in ...
+This will build `my_timer.ko` in `part2/`.
 ### Execution
 ```bash
-make run
+sudo insmod my_timer.ko
+cat /proc/timer
+sleep 1
+cat /proc/timer
+sudo rmmod my_timer.ko
 ```
-This will run the program ...
+This will load the module and read `/proc/timer` twice. The first read shows the current time, and later reads also show the elapsed time since the previous read. Removing the module also removes `/proc/timer`.
 
 
 ## Part 3
